@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import ReactPlayer from 'react-player';
+import Header from '../Header/Header';
 
 function AnimeDetails({ match }) {
     let params=match.params;
@@ -13,11 +15,18 @@ function AnimeDetails({ match }) {
 
     }
     useEffect(() => {
-        getanimedetails()
+        getanimedetails(params.mal_id)
     }, [params.mal_id]);
     return (
         <div style={{color:"white"}}>
-          {detail.title}
+          
+                <Header />
+            
+              <ReactPlayer url={detail.trailer_url} 
+              width="100%" 
+              height="35rem"
+              />
+            
         </div>
     )
 }

@@ -1,7 +1,7 @@
 
 
 import { Route, Switch } from 'react-router';
-import './App.css';
+import './index.css';
 import AnimeDetails from './components/AnimeDetails/AnimeDetails';
 
 import Home from './components/Home/Home';
