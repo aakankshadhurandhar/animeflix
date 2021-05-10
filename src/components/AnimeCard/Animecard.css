@@ -1,0 +1,35 @@
+.anime {
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 250px;
+    background-color: #1F2937;
+    overflow: hidden;
+    position: relative;
+  }
+  .anime img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .anime-info {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding: .5rem;
+   
+  }
+  
+  .anime-info h3 {
+    margin: 0;
+    color: blanchedalmond;
+  }
+  .tag {
+    background-color: #22254b;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: blanchedalmond;
+  }
+  
