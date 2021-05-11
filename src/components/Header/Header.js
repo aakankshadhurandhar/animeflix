@@ -7,6 +7,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -87,6 +88,7 @@ export default function Header() {
           <Typography className={classes.title} variant="h6" noWrap>
             AnimeFlix
           </Typography>
+          <FavoriteIcon style={{color:"red"}}/>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
