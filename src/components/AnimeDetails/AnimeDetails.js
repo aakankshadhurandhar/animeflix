@@ -6,6 +6,7 @@ import ReactPlayer from 'react-player';
 import Header from '../Header/Header';
 
 
+
 function AnimeDetails({ match }) {
     let params=match.params;
     const[detail,setdetail]=useState([])
@@ -26,7 +27,7 @@ function AnimeDetails({ match }) {
     return (
         <div style={{color:"white"}}>
           
-                <Header />
+                
             { detail.trailer_url &&
             <div className="mx-auto">
             <ReactPlayer url={detail.trailer_url} 
@@ -45,6 +46,7 @@ function AnimeDetails({ match }) {
                 
 
                 />
+                
                 <div className="details md:ml-6 md:mt-0 mt-5">
                 <h2 className="text-2xl font-semibold mt-20">
                 
@@ -61,10 +63,12 @@ function AnimeDetails({ match }) {
           <p className="text-lg">
             <span className="font-medium">Duration : </span>{detail.duration }
           </p>
+          
                 </div>
 
 
             </div>
+            
             <div className="container mx-auto mt-16 px-5 md:px-10 mb-16 ml-16">
       <div className="synopsis">
         <h1 className="md:text-4xl text-3xl mb-4">Synopsis</h1>

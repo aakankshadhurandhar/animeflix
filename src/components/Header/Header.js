@@ -8,6 +8,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -88,7 +89,10 @@ export default function Header() {
           <Typography className={classes.title} variant="h6" noWrap>
             AnimeFlix
           </Typography>
+          <Link to="favourites">
           <FavoriteIcon style={{color:"red"}}/>
+          </Link>
+          
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
