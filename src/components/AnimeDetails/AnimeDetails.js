@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import ReactPlayer from 'react-player';
 
-import Header from '../Header/Header';
+
 
 
 
@@ -15,7 +15,7 @@ function AnimeDetails({ match }) {
         const temp=await fetch(`https://api.jikan.moe/v3/anime/${mal_id}`)
         .then(res=>res.json());
         setdetail(temp)
-        console.log()
+       
 
     }
     

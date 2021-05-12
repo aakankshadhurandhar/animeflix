@@ -10,7 +10,7 @@ function AnimeCard({anime}) {
 			 const[favourite,setfavourite]=useState({id:anime.mal_id,title:anime.title,poster:anime.image_url})
 			 
 			 let alreadyfavouritemovie=favourites.find(obj=>obj.mal_id===anime.mal_id)
-			 const favouritesdisable=alreadyfavouritemovie?true:false;
+			 const favouritesdisable=alreadyfavouritemovie? true:false;
 			const handlefavanime=()=>{
 				setfavourite(favourite)
 				addAnimeToWatchlist(favourite)
@@ -21,11 +21,12 @@ function AnimeCard({anime}) {
 			<img src={anime.image_url} alt="anime-img"/>
 			</Link>
 			<div className="anime-info">
-			<FavoriteIcon style={{fontSize:"2rem"}}
-				onClick={handlefavanime}
-				disabled={favouritesdisable}
+				<button onClick={handlefavanime}
+				disabled={favouritesdisable}><FavoriteIcon style={{fontSize:"2rem",color:favouritesdisable?"red":"white"}}
+				
 			
-			/>
+				/></button>
+			
 				<h3>{anime.title}</h3>
 				<span className="tag">{anime.score}</span>
 
