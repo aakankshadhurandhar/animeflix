@@ -11,7 +11,7 @@ function Favorites() {
     <div className="anime-list">
       {favourites &&
         favourites.map((anime) => (
-          <FavouriteCard key={anime.mal_id} anime={anime} />
+          <FavouriteCard key={anime.id} anime={anime} />
         ))}
     </div>
     </>

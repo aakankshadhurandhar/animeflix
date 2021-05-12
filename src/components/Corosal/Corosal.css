@@ -1,0 +1,18 @@
+.hero-section {
+    background-image: url("../assets/aot-heroimg.jpg");
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: inset 0 -100px 120px rgba(0,0,0,.8);
+    color: white
+  }
+  .title {
+    top: 23%;
+  }
+  @media only screen and (min-width: 1150px) {
+    .title {
+      top: 33%;
+    }
+  }
