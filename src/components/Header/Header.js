@@ -86,10 +86,13 @@ export default function Header() {
           >
             <MenuIcon />
           </IconButton>
+          <Link to="/" >
           <Typography className={classes.title} variant="h6" noWrap>
             AnimeFlix
           </Typography>
-          <Link to="favourites">
+          </Link>
+          
+          <Link to="/favourites">
           <FavoriteIcon style={{color:"red"}}/>
           </Link>
           

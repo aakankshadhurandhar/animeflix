@@ -7,6 +7,7 @@ import AnimeDetails from './components/AnimeDetails/AnimeDetails';
 import Home from './components/Home/Home';
 import Favorites from './components/Favorites/Favorites';
 import { GlobalProvider } from './components/Context/Globalcontext';
+import Header from './components/Header/Header';
 
 
 
@@ -16,11 +17,11 @@ function App() {
   return (
     <div>
       <GlobalProvider>
-        
+        <Header />
      <Switch>
-     <Route path="/" component={Home} exact/>
-     <Route path="/anime/:mal_id" component={AnimeDetails}/>
-     <Route path="/favourites" component={Favorites} exact/>
+     <Route exact path="/" component={Home} />
+     <Route exact path="/anime/:mal_id" component={AnimeDetails}/>
+     <Route exact path="/favourites" component={Favorites} />
      </Switch>
      </GlobalProvider>
     </div>

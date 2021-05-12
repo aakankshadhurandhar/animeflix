@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../Header/Header';
+
 import TopAiringanime from '../Topanime/TopAiringanime'
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
 
     return (
         <div>
-            <Header />
+           
             <TopAiringanime topanime={topanime}/>
         </div>
     )
