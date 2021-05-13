@@ -19,8 +19,10 @@ function AnimeDetails({ match }) {
 
     }
     
+    
     useEffect(() => {
         getanimedetails(params.mal_id)
+       
        
     }, [params.mal_id]);
     
@@ -36,7 +38,7 @@ function AnimeDetails({ match }) {
               />
             </div>
 
-}
+            }
 
             
             <div className="md:flex md:text-left text-center">

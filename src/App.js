@@ -24,6 +24,7 @@ function App() {
      <Route exact path="/anime/:mal_id" component={AnimeDetails}/>
      <Route exact path="/favourites" component={Favorites} />
      <Route exact path="/upcoming" component={Upcoming} />
+     
      </Switch>
      </GlobalProvider>
     </div>

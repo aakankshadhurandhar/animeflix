@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles();
+  
 
   return (
     <div className={classes.root}>
@@ -93,22 +94,10 @@ export default function Header() {
           </Link>
           
           <Link to="/favourites">
-          <FavoriteIcon style={{color:"red"}}/>
+          <FavoriteIcon style={{color:"red",marginLeft:"3rem"}}/>
           </Link>
           
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
+          
         </Toolbar>
       </AppBar>
     </div>

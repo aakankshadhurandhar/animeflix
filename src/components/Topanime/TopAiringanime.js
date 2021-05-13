@@ -9,7 +9,7 @@ function TopAiringanime() {
 		const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/airing`)
 			.then(res => res.json());
 
-		settopanime(temp.top.slice(0, 20));
+		settopanime(temp.top.slice(0, 40));
 	}
     useEffect(() => {
 		GetTopAnime();
