@@ -17,12 +17,15 @@ export const GlobalProvider= props =>{
     const addAnimeToWatchlist=anime=>{
         dispatch({type: "ADD_ANIME", payload: anime})
     }
-    
+    const removefromwatchlist=(id)=>{
+        dispatch({type:"REMOVE_ANIME",payload:id})
+    }
     return(
         <GlobalContext.Provider 
             value={{
                 favourites: state.favourites,
                 addAnimeToWatchlist,
+                removefromwatchlist
                
         }}>
             {props.children}

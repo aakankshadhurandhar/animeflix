@@ -5,7 +5,11 @@ const AppReducer=(state,action)=>{
                 ...state,
                 favourites: [action.payload, ...state.favourites]
             }
-        
+        case "REMOVE_ANIME":
+            return {
+                ...state,
+                favourites:state.favourites.filter(anime=>anime.id !==action.payload)
+            }
         
         default:
             return state

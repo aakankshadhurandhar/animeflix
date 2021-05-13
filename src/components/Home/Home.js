@@ -1,24 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+
 import Corosal from '../Corosal/Corosal';
+
 
 import TopAiringanime from '../Topanime/TopAiringanime'
 
 function Home() {
-    const[topanime,settopanime]=useState([])
-    const GetTopAnime = async () => {
-		const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/airing`)
-			.then(res => res.json());
-
-		settopanime(temp.top.slice(0, 20));
-	}
-    useEffect(() => {
-		GetTopAnime();
-	}, []);
+    
 
     return (
-        <div>
+        <div style={{color:"white"}}>
             <Corosal />
-            <TopAiringanime topanime={topanime}/>
+            
+          
+        <TopAiringanime />
         </div>
     )
 }
