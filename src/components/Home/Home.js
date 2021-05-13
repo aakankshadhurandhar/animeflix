@@ -30,8 +30,13 @@ function Home() {
             <Link to="/upcoming">
             <Button >Upcoming Animes</Button>
             </Link>
-           
-        <h2 style={{color:"white",fontSize:"3rem",margin:"3rem"}}>Top Animes</h2>
+            <Link to="/bypopular">
+            <Button>
+                Popular anime
+            </Button>
+            </Link>
+            
+        <h2 style={{color:"white",fontSize:"3rem",margin:"3rem"}}>Top airing Animes</h2>
         <TopAiringanime />
         </div>
     )
