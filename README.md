@@ -20,3 +20,16 @@
 8. React routers
 
 
+![Demo](public/gifs/animeflix%20.gif)
+
+
+## Basic Setup
+
+```javascript
+# for installing all dependencies
+npm install
+
+# for running the react app in local host
+npm start
+
+```
